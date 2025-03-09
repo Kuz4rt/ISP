@@ -101,3 +101,26 @@ function x_functions_2() {
             break;
     }
 }
+
+function N_K() {
+    let N = document.getElementById("Number_N");
+    let K = document.getElementById("Number_K");
+    let numbers = [15, 10, 7, 8, 2, 6];
+    for (let i = 0; i < N.value; i++) {
+        if (numbers[i] < K.value) {
+            document.getElementById("N_K_result").textContent = "TRUE";
+            break
+        }
+        else
+            document.getElementById("N_K_result").textContent = "FALSE";
+    }
+}
+
+function N_sequence() {
+    let N = document.getElementById("Number_N_2");
+    let sum = 0;
+    for (let i = 1; i <= N.value; i++) {
+        sum += 1 / i;
+    }
+    document.getElementById("N_sequence_result").textContent = sum;
+}
