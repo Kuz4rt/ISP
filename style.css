@@ -1,0 +1,127 @@
+body {
+    background-color: #BFD7ED;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.navigation {
+    display: flex;
+    padding: 25px;
+    font-size: 25px;
+    background-color: #305478;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 50px;
+}
+
+.tasks {
+    display: flex;
+    gap: 100px;
+    padding-top: 200px;
+}
+
+
+.task_result {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.button_2 {
+    padding: 8px;
+    background-color: #6190f5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.headder {
+    background-color: #305478;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: #305478;
+    width: 500px;
+    padding: 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+label {
+    color: #D0FEF5;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-right: 9px;
+}
+
+a {
+    font-size: 18px;
+    color: #D0FEF5;
+    margin-bottom: 10px;
+}
+
+.undertext {
+    font-size: 18px;
+    color: #D0FEF5;
+    margin-bottom: 10px;
+}
+
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #D0FEF5;
+    border: 2px solid #2B2D42;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px;
+    background-color: #6190f5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #654eb9;
+}
+
+p {
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: left;
+}
