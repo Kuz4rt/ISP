@@ -28,11 +28,48 @@ nav {
     padding-top: 200px;
 }
 
+.results {
+    display: flex;
+    gap: 20px;
+}
 
 .task_result {
     color: #ffffff;
     font-size: 18px;
     padding: 10px;
+}
+
+.body_novel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    background-image: none;
+    background-size: auto;
+}
+
+.rectangle_novel {
+    border: 3px solid;
+    margin: auto;
+    padding: 15px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border-color: #ffffff;
+    gap: 10px;
+    width: 1200px;
+}
+
+.Text_box {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.Text_box_name {
+    color: #000000;
+    font-size: 18px;
+    display: none;
 }
 
 .button_2 {
@@ -44,6 +81,13 @@ nav {
     border-radius: 4px;
     cursor: pointer;
     display: none;
+}
+
+.img_novel {
+    width: 1200px;
+    height: 600px;
+    border: 3px solid;
+    border-color: #ffffff;
 }
 
 form {
@@ -124,4 +168,126 @@ p {
     margin-top: 5px;
     margin-left: 0;
     text-align: left;
+}
+
+.card_sale_fix {
+    padding-bottom: 50px;
+}
+
+.card_sale {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card_sale div {
+    border: 3px solid;
+    padding: 15px;
+    background-color: #305478;
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_card {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 10px;
+}
+
+.top {
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.top_filter {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #305478;
+    border: 3px solid;
+}
+
+.name_collection {
+    background-color: #305478;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.filter_by {
+    background-color: #305478;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.filter_all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border: 3px solid;
+    background-color: #305478;
+}
+
+.sum {
+    color: #000000;
+    font-size: 18px;
+    display: none;
+}
+
+.solo_card {
+    display: none;
+}
+
+.new_card_main {
+    display: none;
+}
+
+.new_card {
+    border: 3px solid;
+    padding: 15px;
+    background-color: #305478;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    gap: 10px;
+}
+
+.card_sale_new {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card_sale_new div {
+    border: 3px solid;
+    padding: 15px;
+    background-color: #305478;
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop_button {
+    display: none;
 }
