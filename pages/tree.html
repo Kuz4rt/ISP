@@ -1,0 +1,99 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кузнецов А.А.</title>
+    <link rel="stylesheet" href="../styles/tree.css">
+    <script src="../java_script/calculations.js"></script>
+</head>
+
+<nav>
+    <div class="navigation">
+        <a href="index.html">Лабораторная №2</a>
+        <a href="tree.html">Лабораторная №3</a>
+        <a href="four.html">Лабораторная №4</a>
+        <a href="novel.html">Лабораторная №5</a>
+        <a href="six.html">Лабораторная №6</a>
+    </div>
+    <div class="burger">
+        <div onclick="Menu()"><img src="../image/menu.png" class="logo"></div>
+        <ul class="menu" id="menu">
+            <a class="mobile_navigation" href="index.html">Лабораторная №2</a>
+            <a class="mobile_navigation" href="tree.html">Лабораторная №3</a>
+            <a class="mobile_navigation" href="four.html">Лабораторная №4</a>
+            <a class="mobile_navigation" href="novel.html">Лабораторная №5</a>
+            <a class="mobile_navigation" href="six.html">Лабораторная №6</a>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="tasks">
+        <div class="container">
+            <label class="lab">Задание №1</label>
+            <label id="input1">Даны два целых числа: A, B. Проверить истинность высказывания: «Ровно одно из чисел A и B
+                нечетное».</label>
+            <form>
+                <label>Введите А:</label>
+                <input id="firstNumber" type="text">
+
+                <label>Введите В:</label>
+                <input id="secondNumber" type="text">
+            </form>
+            <div class="task_result" id="one_task_result"></div>
+            <button onclick="the_truth_A_or_B()">Проверить</button>
+        </div>
+
+        <div class="container">
+            <label class="lab">Задание №2</label>
+            <label id="input2">Даны две переменные целого типа: A и B. Если их значения не равны, то присвоить каждой
+                переменной сумму этих значений, а если равны,
+                то присвоить переменным нулевые значения. Вывести новые значения переменных A и B.</label>
+            <form>
+                <label>Введите А:</label>
+                <input id="firstNumber_2" type="text">
+
+                <label>Введите В:</label>
+                <input id="secondNumber_2" type="text">
+            </form>
+            <div class="results">
+                <label>Новое А:</label>
+                <div class="task_result" id="one_task_result_A"></div>
+                <label>Новое В:</label>
+                <div class="task_result" id="one_task_result_B"></div>
+            </div>
+
+            <button onclick="comparison_A_and_B()">Ввод</button>
+        </div>
+    </div>
+    <div class="tasks">
+        <div class="container">
+            <label class="lab">Задание №3</label>
+            <label class="lab">Вычислить значение функции y=f(x) при произвольных значениях x.</label>
+            <img class="photo" src="../image/task_tree.png">
+            <form>
+                <label class="lab">Введите Х:</label>
+                <input id="input_x_functions_X" type="text">
+            </form>
+            <button onclick="x_functions()">Решить задачу</button>
+            <div class="task_result" id="x_functions_task_result"></div>
+        </div>
+
+        <div class="container">
+            <label class="lab">Задание №4</label>
+            <label class="lab">Вычислить значение функции y=f(x) при произвольных значениях x. Для вычисления значения
+                функции использовать оператор switch.</label>
+            <img class="photo" src="../image/task_four.png">
+            <form>
+                <label class="lab">Введите Х:</label>
+                <input id="input_x_functions_2_X" type="text">
+            </form>
+            <button onclick="x_functions_2()">Решить задачу</button>
+            <div class="task_result" id="x_functions_2_task_result"></div>
+        </div>
+    </div>
+</body>
+
+</html>

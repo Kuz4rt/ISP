@@ -1,0 +1,57 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кузнецов А.А.</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../java_script/calculations.js"></script>
+</head>
+
+<nav>
+    <div class="navigation">
+        <a href="index.html">Лабораторная №2</a>
+        <a href="tree.html">Лабораторная №3</a>
+        <a href="four.html">Лабораторная №4</a>
+        <a href="novel.html">Лабораторная №5</a>
+        <a href="six.html">Лабораторная №6</a>
+    </div>
+    <div class="burger">
+        <div onclick="Menu()"><img src="../image/menu.png" class="logo"></div>
+        <ul class="menu" id="menu">
+            <a class="mobile_navigation" href="index.html">Лабораторная №2</a>
+            <a class="mobile_navigation" href="tree.html">Лабораторная №3</a>
+            <a class="mobile_navigation" href="four.html">Лабораторная №4</a>
+            <a class="mobile_navigation" href="novel.html">Лабораторная №5</a>
+            <a class="mobile_navigation" href="six.html">Лабораторная №6</a>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="tasks">
+        <div class="container">
+            <label id="input1">Расчет суммы, разности, произведения и частного квадратов двух чисел</label>
+            <form>
+                <label>Первоё число:</label>
+                <input id="firstNumber" type="text">
+
+                <label>Второе число:</label>
+                <input id="secondNumber" type="text">
+            </form>
+            <button onclick="calculateSquareOperations()">Ввод</button>
+        </div>
+
+        <div class="container">
+            <label id="input2">Части числа</label>
+            <form>
+                <label>Введите число:</label>
+                <input id="Number" type="text">
+            </form>
+            <button onclick="getLastAndMiddleDigits()">Ввод</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кузнецов А.А.</title>
+    <link rel="stylesheet" href="../styles/novel.css">
+    <script src="../java_script/novel.js"></script>
+</head>
+
+<nav>
+    <div class="navigation">
+        <a href="index.html">Лабораторная №2</a>
+        <a href="tree.html">Лабораторная №3</a>
+        <a href="four.html">Лабораторная №4</a>
+        <a href="novel.html">Лабораторная №5</a>
+        <a href="six.html">Лабораторная №6</a>
+    </div>
+    <div class="burger">
+        <div onclick="Menu()"><img src="../image/menu.png" class="logo"></div>
+        <ul class="menu" id="menu">
+            <a class="mobile_navigation" href="index.html">Лабораторная №2</a>
+            <a class="mobile_navigation" href="tree.html">Лабораторная №3</a>
+            <a class="mobile_navigation" href="four.html">Лабораторная №4</a>
+            <a class="mobile_navigation" href="novel.html">Лабораторная №5</a>
+            <a class="mobile_navigation" href="six.html">Лабораторная №6</a>
+        </ul>
+    </div>
+</nav>
+
+<body class="body_novel">
+    <div style="padding: 25px;">
+        <img id="img_novel" class="img_novel" src="../image/novell/BLACK.jpeg">
+    </div>
+    <div class="rectangle_novel">
+        <p class="Text_box_name" id="Text_box_name"></p>
+        <div class="Text_box">
+            <label id="Text_box">Темнота, я уснул на школьной парте во время урока.
+            </label>
+        </div>
+        <button class="button" type="button" id="Novel_buttom_1" onclick="getButton(event)">Проснуться</button>
+        <button class="button_2" type="button" id="Novel_buttom_2" onclick="getButton(event)"></button>
+    </div>
+
+</body>
+
+</html>

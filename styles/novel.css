@@ -1,0 +1,257 @@
+body {
+    background-color: #FECD45;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.navigation {
+    display: flex;
+    padding: 25px;
+    font-size: 25px;
+    background-color: #305478;
+    justify-content: center;
+    gap: 50px;
+}
+
+.tasks {
+    display: flex;
+    gap: 100px;
+    padding-top: 200px;
+}
+
+label {
+    color: #D0FEF5;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-right: 9px;
+}
+
+a {
+    font-size: 18px;
+    color: #D0FEF5;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+button {
+    padding: 8px;
+    background-color: #6190f5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #654eb9;
+}
+
+
+.body_novel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    background-image: none;
+    background-size: auto;
+}
+
+.rectangle_novel {
+    border: 3px solid;
+    margin: auto;
+    padding: 15px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border-color: #ffffff;
+    gap: 10px;
+    width: 1200px;
+}
+
+.Text_box {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.Text_box_name {
+    color: #000000;
+    font-size: 18px;
+    display: none;
+}
+
+.button_2 {
+    padding: 8px;
+    background-color: #6190f5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.img_novel {
+    width: 1200px;
+    height: 600px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+
+.burger {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_novel {
+        display: none;
+    }
+
+
+    .mobile_navigation {
+        display: flex;
+        padding: 20px;
+        font-size: 25px;
+        border: 2px solid #000000;
+        background-color: #000000;
+    }
+
+    form {
+        padding: 10px;
+        flex: 1;
+    }
+
+    .mobile_fix {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        padding-right: 300px;
+        width: 50px;
+    }
+
+    footer {
+        background-color: #933257;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+    .tasks {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 50px;
+    }
+
+    .container {
+        background-color: #305478;
+        padding: 20px;
+        width: auto;
+        margin: 20px 0;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label {
+        color: #D0FEF5;
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding-right: 9px;
+    }
+
+    a {
+        font-size: 18px;
+        color: #D0FEF5;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+
+    button {
+        padding: 8px;
+        background-color: #6190f5;
+        color: white;
+        font-size: 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #6190f5;
+    }
+
+    .button_2 {
+        padding: 8px;
+        background-color: #6190f5;
+        color: white;
+        font-size: 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    body {
+        background-color: #FECD45;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .img_novel {
+        width: 350px;
+        height: 600px;
+        border: 3px solid;
+        border-color: #ffffff;
+    }
+
+    .rectangle_novel {
+        border: 3px solid;
+        margin: auto;
+        padding: 15px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        border-color: #ffffff;
+        gap: 10px;
+        width: 320px;
+    }
+
+}
