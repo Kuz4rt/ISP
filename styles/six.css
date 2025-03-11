@@ -78,6 +78,9 @@ a {
 .text_card {
     color: #000000;
     font-size: 18px;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 10px;
 }
 
 .top {
@@ -161,7 +164,7 @@ a {
 .new_card {
     border: 1px solid;
     padding: 15px;
-    background-color: #efefef;
+    background-color: #ffffff;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -199,6 +202,17 @@ a {
 
 .menu {
     display: none;
+}
+
+footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #305478;
+    color: white;
+    padding: 10px 0;
 }
 
 @media (max-width: 992px) {
@@ -251,13 +265,12 @@ a {
     }
 
     footer {
-        background-color: #933257;
-        position: fixed;
-        left: 0;
-        bottom: 0;
+        background-color: #305478;
         width: 100%;
+        text-align: center;
+        color: white;
+        padding: 10px 0;
     }
-
 
     .tasks {
         display: flex;
@@ -323,5 +336,4 @@ a {
         width: 200px;
         height: 200px;
     }
-
 }

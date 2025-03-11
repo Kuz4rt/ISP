@@ -19,6 +19,7 @@ fetch('https://dummyjson.com/products?limit=30&skip=106')
           <img src="${product.thumbnail}">
           <p class="text_card">${product.title}</p>
           <p class="text_card">$${product.price}</p>
+          <button type="button" class="card_button" id="${product.id - 1}" onclick="SoloCardDisplay(this.id)">Просмотр</button>
         `;
                 card.append(productElement);
             });
@@ -98,10 +99,62 @@ function HideNew() {
         })
 }
 
+function NewCard() {
+    document.getElementById('new_solo_card').style.display = "block";
+    document.getElementById('new_solo_card').style.position = "fixed";
+    document.body.style.overflow = "hidden";
+    document.body.style.userSelect = "none";
+    let new_card = document.getElementById('new_product_disp');
+    new_card.innerHTML = '';
+    let new_productElement = document.createElement('div');
+    new_productElement.innerHTML = `
+    <p class="text_card">${outsideProduct.title}</p>
+    <p class="text_card">${outsideProduct.description}</p>
+    <p class="text_card">Price: $${outsideProduct.price}</p>
+    <button type="button" class="card_button" id="card_button" onclick="NewCardHide()">Закрыть</button>
+  `;
+    new_card.append(new_productElement);
+
+};
 
 function NewCardHide() {
     document.getElementById('new_solo_card').style.display = "none";
     document.getElementById('new_solo_card').style.position = "absolute";
     document.body.style.overflow = "auto";
     document.body.style.userSelect = "auto";
+}
+
+function SoloCardDisplay(i) {
+    onclick = function () {
+        fetch('https://dummyjson.com/products?limit=0')
+            .then(res => res.json())
+            .then(solo_json => {
+                let card_solo = document.getElementById('solo_product');
+                let one_product = solo_json.products;
+                card_solo.innerHTML = '';
+                let solo_productElement = document.createElement('div');
+                solo_productElement.innerHTML = `
+                    <p class="text_card">${one_product[i].title}</p>
+                    <p class="text_card">${one_product[i].description}</p>
+                    <p class="text_card">Price: $${one_product[i].price}</p>
+                    <img src="${one_product[i].thumbnail}">
+                    <button type="button" class="card_button" id="card_button" onclick="SoloCardHide()">Закрыть</button>
+                  `;
+                card_solo.append(solo_productElement);
+            })
+        document.getElementById('solo_card').style.display = "block";
+        document.getElementById('solo_card').style.position = "fixed";
+        document.body.style.overflow = "hidden";
+        document.body.style.userSelect = "none";
+    }
+}
+
+
+function SoloCardHide() {
+    onclick = function () {
+        document.getElementById('solo_card').style.display = "none";
+        document.getElementById('solo_card').style.position = "absolute";
+        document.body.style.overflow = "auto";
+        document.body.style.userSelect = "auto";
+    }
 }
