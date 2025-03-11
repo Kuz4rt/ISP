@@ -1,6 +1,7 @@
 body {
     background-color: #BFD7ED;
     margin: 0;
+    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -15,6 +16,7 @@ nav {
 .navigation {
     display: flex;
     padding: 25px;
+    font-family: Arial, sans-serif;
     font-size: 25px;
     background-color: #305478;
     justify-content: center;
@@ -107,6 +109,7 @@ form {
     .mobile_navigation {
         display: flex;
         padding: 20px;
+        font-family: Arial, sans-serif;
         font-size: 25px;
         border: 2px solid #305478;
         background-color: #305478;
@@ -191,6 +194,7 @@ form {
     body {
         background-color: #BFD7ED;
         margin: 5px;
+        font-family: Arial, sans-serif;
         display: flex;
         align-items: center;
         height: 100vh;

@@ -1,6 +1,7 @@
 body {
     background-color: #BFD7ED;
     margin: 0;
+    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -15,6 +16,7 @@ nav {
 .navigation {
     display: flex;
     padding: 25px;
+    font-family: Arial, sans-serif;
     font-size: 25px;
     background-color: #305478;
     justify-content: center;
@@ -130,6 +132,7 @@ button:hover {
     .mobile_navigation {
         display: flex;
         padding: 20px;
+        font-family: Arial, sans-serif;
         font-size: 25px;
         border: 2px solid #000000;
         background-color: #000000;
@@ -227,6 +230,7 @@ button:hover {
 
     body {
         background-color: #BFD7ED;
+        font-family: Arial, sans-serif;
         margin: 5px;
         display: flex;
         align-items: center;

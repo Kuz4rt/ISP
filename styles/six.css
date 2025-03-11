@@ -1,4 +1,5 @@
 body {
+    font-family: "Teko", Arial, sans-serif;
     background-color: #ffffff;
     margin: 0;
     display: flex;
@@ -43,6 +44,7 @@ a {
 .navigation {
     display: flex;
     padding: 25px;
+    font-family: "Teko", Arial, sans-serif;
     font-size: 25px;
     background-color: #305478;
     justify-content: center;
@@ -219,6 +221,7 @@ a {
     .mobile_navigation {
         display: flex;
         padding: 20px;
+        font-family: "Teko", Arial, sans-serif;
         font-size: 25px;
         border: 2px solid #efefef;
         background-color: #efefef;
@@ -309,6 +312,7 @@ a {
     body {
         background-color: #ffffff;
         margin: 5px;
+        font-family: "Teko", Arial, sans-serif;
         display: flex;
         align-items: center;
         height: 100vh;
