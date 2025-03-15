@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кузнецов А.А.</title>
+    <link rel="stylesheet" href="../styles/six.css">
+    <script src="../java_script/six.js" defer></script>
+</head>
+
+<nav>
+    <div class="navigation">
+        <a href="index.html">Лабораторная №2</a>
+        <a href="tree.html">Лабораторная №3</a>
+        <a href="four.html">Лабораторная №4</a>
+        <a href="novel.html">Лабораторная №5</a>
+        <a href="six.html">Лабораторная №6</a>
+    </div>
+    <div class="burger">
+        <div onclick="Menu()"><img src="../image/menu.png" class="logo"></div>
+        <ul class="menu" id="menu">
+            <a class="mobile_navigation" href="index.html">Лабораторная №2</a>
+            <a class="mobile_navigation" href="tree.html">Лабораторная №3</a>
+            <a class="mobile_navigation" href="four.html">Лабораторная №4</a>
+            <a class="mobile_navigation" href="novel.html">Лабораторная №5</a>
+            <a class="mobile_navigation" href="six.html">Лабораторная №6</a>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="top">
+        <div class="top_filter">
+            <div class="collection">
+                <p class="name_collection">PRODUCTS COLLECTION</p>
+            </div>
+            <p class="filter_by">Filter by</p>
+            <div class="filter_all">
+                <div class="filter">
+                    <select class="button_filter">
+                        <option value="1">Size</option>
+                    </select>
+                    <select class="button_filter">
+                        <option value="1">Colour</option>
+                    </select>
+                    <select class="button_filter">
+                        <option value="1">Gender</option>
+                    </select>
+                    <select class="button_filter">
+                        <option value="1">Price</option>
+                    </select>
+                    <select class="button_filter">
+                        <option value="1">Activity</option>
+                    </select>
+                    <select class="button_filter">
+                        <option value="1">Weight</option>
+                    </select>
+                    <select class="button_filter">
+                        <option value="1">Type</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" id="search_bar" placeholder="Поиск" />
+        <button class="button" id="search_button">Поиск</button>
+        <button class="drop_button" id="drop_button">Очистить</button>
+        <button class="add_button" id="add_button" onclick="AddCard()">Добавить</button>
+    </div>
+    <p id="sum" class="sum"></p>
+    <div id="products_container" class="solo_card"></div>
+    <div class="card_sale_fix">
+        <div class="card_sale" id="product"></div>
+        <div class="card_sale_new" id="new_product"></div>
+    </div>
+    <div id="solo_card" class="solo_card">
+        <div class="card_sale_solo" id="solo_product"></div>
+    </div>
+    <div id="new_solo_card" class="solo_card">
+        <div class="card_sale_solo" id="new_product_disp"></div>
+    </div>
+    <div id="new_card_main" class="new_card_main">
+        <div class="new_card" id="new_card">
+            <input type="text" id="name_product" placeholder="Имя продукта" />
+            <input type="text" id="description_product" placeholder="Описание продукта" />
+            <input type="text" id="cost_product" placeholder="Цена продукта" />
+            <input type="file" id="img_product" />
+            <button class="add_button" id="add_button" onclick="HideNew()">Сохранить</button>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025. By A.Kuznetsov - Лабораторная работа №7</p>
+    </footer>
+</body>
+</html>
